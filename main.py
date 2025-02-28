@@ -16,7 +16,7 @@ except ValueError:
     raise ValueError("Incorect date format, it should be YYYY-MM-DD.")
 year = user_date.split("-")[0]
 
-#spotipy authentication
+#spotipy authentication - it created a token.txt file after acces is allowed
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
         scope="playlist-modify-private",
